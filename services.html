@@ -29,7 +29,9 @@
 
 <body class="shop-page">
 	
-
+	<div id="loader" class="loader">
+		<img src="images/tooth.png" class="loader_img" alt="">
+	</div>
 	<!--header-->
 	<header class="header">
 		<div class="header-quickLinks js-header-quickLinks d-lg-none">
@@ -147,72 +149,7 @@
 						</a>
 						<div class="link-drop">
 							<h5 class="link-drop-title"><i class="icon-pencil-writing"></i>Request Form</h5>
-							<form id="requestForm" method="post" novalidate>
-								<div class="successform">
-									<p>Your message was sent successfully!</p>
-								</div>
-								<div class="errorform">
-									<p>Something went wrong, try refreshing and submitting the form again.</p>
-								</div>
-								<div class="input-group">
-									<span>
-											<i class="icon-user"></i>
-										</span>
-									<input name="requestname" type="text" class="form-control" placeholder="Your Name" />
-								</div>
-								<div class="row row-sm-space mt-1">
-									<div class="col">
-										<div class="input-group">
-											<span>
-													<i class="icon-email2"></i>
-												</span>
-											<input name="requestemail" type="text" class="form-control" placeholder="Your Email" />
-										</div>
-									</div>
-									<div class="col">
-										<div class="input-group">
-											<span>
-													<i class="icon-smartphone"></i>
-												</span>
-											<input name="requestphone" type="text" class="form-control" placeholder="Your Phone" />
-										</div>
-									</div>
-								</div>
-								<div class="selectWrapper input-group mt-1">
-									<span><i class="icon-tooth"></i></span>
-									<select name="requestservice" class="form-control">
-										<option selected="selected" disabled="disabled">Select Service</option>
-										<option value="Associate Dentistry">Associate Dentist</option>
-										<option value="Dental Hygienist">Dental Hygienist</option>
-										<option value="General Dentist">General Dentist</option>
-									</select>
-								</div>
-								<div class="row row-sm-space mt-1">
-									<div class="col-sm-6">
-										<div class="input-group flex-nowrap">
-											<span>
-														<i class="icon-calendar2"></i>
-													</span>
-											<div class="datepicker-wrap">
-												<input name="requestdate" type="text" class="form-control datetimepicker" placeholder="Date" readonly>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 mt-1 mt-sm-0">
-										<div class="input-group flex-nowrap">
-											<span>
-															<i class="icon-clock"></i>
-													</span>
-											<div class="datepicker-wrap">
-												<input name="requesttime" type="text" class="form-control timepicker" placeholder="Time" readonly>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="text-right mt-2">
-									<button type="submit" class="btn btn-sm btn-hover-fill">Request</button>
-								</div>
-							</form>
+							<a href="services.html" class="btn btn-primary">Request Now</a>
 						</div>
 					</div>
 					<div class="col">
@@ -312,7 +249,7 @@
 									<li>Snoring & Sleep Apnoea Solutions</li>
 									<li>NHS Dentistry</li>
 								</ul>
-								<button type="submit" class="btn btn-primary">Reserve</button>
+								<a href="request_form_doctor.html" class="btn btn-primary">Reserve Now</a>
 
 							</div>
 						</div>
@@ -332,7 +269,7 @@
 									<li>Fluoride Treatments</li>
 									<li>Dental Restorations</li>
 								</ul>
-								<button type="submit" class="btn btn-primary">Reserve</button>
+								<a href="request_form_doctor.html" class="btn btn-primary">Reserve Now</a>
 
 							</div>
 						</div>
@@ -351,7 +288,7 @@
 									<li>All on 4</li>
 									<li>Implant Dentures</li>
 								</ul>
-								<button type="submit" class="btn btn-primary">Reserve</button>
+								<a href="request_form_doctor.html" class="btn btn-primary">Reserve Now</a>
 
 							</div>
 						</div>
@@ -371,7 +308,7 @@
 									<li>Six Month Smiles</li>
 									<li>Invisible Braces</li>
 								</ul>
-								<button type="submit" class="btn btn-primary">Reserve</button>
+								<a href="request_form_doctor.html" class="btn btn-primary">Reserve Now</a>
 
 							</div>
 						</div>
@@ -389,7 +326,7 @@
 									<li>Severe pain</li>
 									<li>Injuries as a result of a recent accident</li>
 								</ul>
-								<button type="submit" class="btn btn-primary">Reserve</button>
+								<a href="request_form_doctor.html" class="btn btn-primary">Reserve Now</a>
 
 							</div>
 						</div>
@@ -407,7 +344,7 @@
 									<li>Moderate Periodontitis</li>
 									<li>Severe Periodontitis</li>
 								</ul>
-								<button type="submit" class="btn btn-primary">Reserve</button>
+								<a href="request_form_doctor.html" class="btn btn-primary">Reserve Now</a>
 
 							</div>
 						</div>
@@ -425,7 +362,7 @@
 									<li>Plastic surgery</li>
 									<li>Other types of surgeries</li>
 								</ul>
-								<button type="submit" class="btn btn-primary">Reserve</button>
+								<a href="request_form_doctor.html" class="btn btn-primary">Reserve Now</a>
 
 							</div>
 						</div>
@@ -442,7 +379,7 @@
 									<li>Fixed dentures</li>
 									<li>Veneers</li>
 								</ul>
-								<button type="submit" class="btn btn-primary">Reserve</button>
+								<a href="request_form_doctor.html" class="btn btn-primary">Reserve Now</a>
 
 							</div>
 						</div>

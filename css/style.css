@@ -15451,7 +15451,7 @@ ul.category-list {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .card .card-body{
-  padding:  15px 25px
+  padding:  25px
 }
 .form-control-validation.error input , .form-control-validation.error select , .form-control-validation.error textarea   {
   border:1px solid #e74c3c !important;
@@ -15483,4 +15483,50 @@ margin: 0;
 /* Firefox */
 input[type=number] {
 -moz-appearance: textfield;
+}
+.inset-0{
+  inset: 0
+}
+/* ------------------------------------
+    39. Preloader CSS
+---------------------------------------*/
+.loader {
+  background-color: #fff;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+
+.loader_img {
+  animation: loaderpulse alternate 900ms infinite;
+}
+
+@keyframes loaderspin {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@-webkit-keyframes loaderspin {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes loaderpulse {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.2);
+  }
 }

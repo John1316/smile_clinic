@@ -191,7 +191,7 @@
 				<div class="container">
 					<div class="breadcrumbs">
 						<a href="index.html">Home</a>
-						<span>Register</span>
+						<span>Requesting Form</span>
 					</div>
 				</div>
 			</div>
@@ -199,61 +199,66 @@
 		<!--section-->
 		<div class="section">
 			<div class="container">
-				<div class="row justify-content-center">
+				<div class="row  justify-content-center">
                     
-					<div class="col-lg-8 mt-4 mt-md-0 ">
+					<div class="col-lg-9 mt-4 mt-md-0 ">
                         <div class="card shadow-4">
                             <div class="card-body">
-                                <h4>Register</h4>
-                                <form id="registerForm" method="POST" class="theme-form">
-                                    <div class="form-row row">
+                                <form id="requestFormValidation" method="get" novalidate>
+									<div class="row justify-content-center" >
 										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input class="form-control" type="text" id="full_name" name="name"
-                                                placeholder="Name">
-												<small>Error message</small>
+											<div class="input-group mt-1 form-control-validation">
+												<input name="requestname" id="requestname" type="text" class="form-control" placeholder="Your Name" />
+												<small></small>
+											</div>
+										</div>
+										<div class="col-lg-6">		
+											<div class="input-group mt-1 form-control-validation">
+												<input name="requestemail" id="requestemail" type="text" class="form-control" placeholder="Your Email" />
+												<small></small>
+											</div>
+										</div>		
+										<div class="col-lg-6">
+											<div class="input-group mt-1 form-control-validation">
+												<input name="requestphone" id="requestphone" type="text" class="form-control" placeholder="Your Phone" />
+												<small></small>
 											</div>
 										</div>
 										<div class="col-lg-6">
-											<div class="form-group  form-control-validation">
-												<input class="form-control" type="email" id="email" name="email"
-                                                placeholder="Email address">
-												
-												<small>Error message</small>
+											<div class="selectWrapper input-group mt-1 form-control-validation">
+												<select name="requestservice" id="requestservice"  class="form-control">
+													<option value="">Select Doctor</option>
+													<option value="Dr. Fahim Bahgat
+													">Dr. Fahim Bahgat
+													</option>
+													<option value="Dr. Basma Kamal
+													">Dr. Basma Kamal
+													</option>
+													<option value="Dr. Gehan Gamal
+													">Dr. Gehan Gamal</option>
+												</select>
+												<small></small>
 											</div>
 										</div>
 										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input onkeypress="isInputNumber(event)" class="form-control" type="number" id="phone" name="phone" min="1"
-                                                placeholder="Phone Number">
-												<small>Error message</small>
-											</div>
-                                        </div>
-										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input class="form-control" type="text" id="address" name="address"
-                                                placeholder="Address">
-												<small>Error message</small>
-											</div>
-                                        </div>
-										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input class="form-control" type="password" id="password" name="password"
-                                                placeholder="Password">
-												<small>Error message</small>
+											<div class="input-group flex-nowrap mt-1 form-control-validation">
+													<input name="requestdate" id="requestdate" type="text" class="form-control datetimepicker" placeholder="Date" readonly>
+													<small></small>
 											</div>
 										</div>
 										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input class="form-control" type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
-												<small>Error message</small>
+											<div class="input-group flex-nowrap mt-1  form-control-validation">
+													<input name="requesttime" id="requesttime" type="text" class="form-control timepicker" placeholder="Time" readonly>
+													<small></small>
 											</div>
 										</div>
-                                        <div class="col-12">
-                                            <button onclick="registerForm();" class="btn btn-primary w-auto" type="submit">create Account</button>
-                                        </div>
-                                    </div>
-                                </form>
+										<div class="col-lg-6">
+											<div class="text-right mt-2">
+												<button onclick="requestForm();" type="submit" class="btn btn-sm btn-hover-fill w-100">Request</button>
+											</div>
+										</div>
+									</div>
+								</form>
                             </div>
                         </div>
 					</div>

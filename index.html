@@ -30,6 +30,7 @@
 <body class="shop-page">
 
 <!--header-->
+	<!--header-->
 	<header class="header">
 		<div class="header-quickLinks js-header-quickLinks d-lg-none">
 			<div class="quickLinks-top js-quickLinks-top"></div>
@@ -40,9 +41,9 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-auto d-flex align-items-center">
-						<div class="header-phone"><i class="icon-telephone"></i><a href="tel:1-847-555-5555">1-800-267-0000</a></div>
-						<div class="header-info"><i class="icon-placeholder2"></i>1560 Holden Street San Diego, CA 92139</div>
-						<div class="header-info"><i class="icon-black-envelope"></i><a href="mailto:info@dentco.net">info@dentco.net</a></div>
+						<div class="header-phone"><i class="icon-telephone"></i><a href="tel:19001">19001</a></div>
+						<div class="header-info"><i class="icon-placeholder2"></i>N Teseen St, Cairo Governorate - Egypt </div>
+						<div class="header-info"><i class="icon-black-envelope"></i><a href="mailto:Shiny@smiledentalclinic.com">Shiny@smiledentalclinic.com</a></div>
 					</div>
 					<div class="col-auto ml-auto d-flex align-items-center">
 						<span class="header-social">
@@ -72,23 +73,19 @@
 											<a class="nav-link" href="about.html">About Us</a>
 										</li>
 										<li class="nav-item">
-											<a href="services.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
-											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="services.html">All Services</a></li>
-												<li><a class="dropdown-item" href="service-page.html">Service Page</a></li>
-												<li><a class="dropdown-item" href="prices.html">Prices</a></li>
-												<li><a class="dropdown-item" href="shop-listing.html">Online Shop</a></li>
-											</ul>
+											<a href="services.html" class="nav-link">Services</a>
+											
+										</li>
+										<li class="nav-item">
+											<a href="gallery.html" class="nav-link">Smiles Gallery</a>
+											
 										</li>
 										
 										<li class="nav-item">
-											<a href="our-specialist.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Specialists</a>
-											<ul class="dropdown-menu">
-												<li><a class="dropdown-item" href="our-specialist.html">All Specialists</a></li>
-												<li><a class="dropdown-item" href="doctor-page.html">Doctor Page</a></li>
-												<li><a class="dropdown-item" href="schedule.html">Schedule Table</a></li>
-											</ul>
-										</li>										<li class="nav-item">
+											<a href="our-specialist.html" class="nav-link">Our Specialists</a>
+											
+										</li>										
+										<li class="nav-item">
 											<a class="nav-link" href="testimonials.html">Testimonials</a>
 										</li>
 										
@@ -106,160 +103,94 @@
 		</div>
 	</header>
 	<!--//header-->
+	<!--//header-->
 	<div class="page-content">
 		<!--section slider-->
 		<div class="section mt-0">
-			<div class="quickLinks-wrap js-quickLinks-wrap-d d-none d-lg-flex">
-				<div class="quickLinks js-quickLinks">
-					<div class="container">
-						<div class="row no-gutters">
-							<div class="col">
-								<a href="#" class="link">
-									<i class="icon-placeholder"></i><span>Location</span></a>
-								<div class="link-drop p-0">
-									<div id="googleMapDrop" class="google-map"></div>
-								</div>
+		<!--quick links-->
+		<div class="quickLinks-wrap js-quickLinks-wrap-d d-none d-lg-flex">
+			<div class="quickLinks js-quickLinks">
+				<div class="container">
+					<div class="row no-gutters">
+						<div class="col">
+							<a href="#" class="link">
+								<i class="icon-placeholder"></i><span>Location</span></a>
+							<div class="link-drop p-0">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.2195848083406!2d31.453696114957676!3d30.03055758188727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cd62b1e3477%3A0x61be373321ebbe38!2sN%20Teseen%20St%2C%20New%20Cairo%201%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1634657250718!5m2!1sen!2seg" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 							</div>
-							<div class="col">
-								<a href="#" class="link">
-									<i class="icon-clock"></i><span>Working Time</span>
-								</a>
-								<div class="link-drop">
-									<h5 class="link-drop-title"><i class="icon-clock"></i>Working Time</h5>
-									<table class="row-table">
-										<tr>
-											<td><i>Mon-Thu</i></td>
-											<td>08:00 - 20:00</td>
-										</tr>
-										<tr>
-											<td><i>Friday</i></td>
-											<td> 07:00 - 22:00</td>
-										</tr>
-										<tr>
-											<td><i>Saturday</i></td>
-											<td>08:00 - 18:00</td>
-										</tr>
-										<tr>
-											<td><i>Sunday</i></td>
-											<td>Closed</td>
-										</tr>
-									</table>
-								</div>
-							</div>
-							<div class="col">
-								<a href="#" class="link">
-									<i class="icon-pencil-writing"></i><span>Request Form</span>
-								</a>
-								<div class="link-drop">
-									<h5 class="link-drop-title"><i class="icon-pencil-writing"></i>Request Form</h5>
-									<form id="requestForm" method="post" novalidate>
-										<div class="successform">
-											<p>Your message was sent successfully!</p>
-										</div>
-										<div class="errorform">
-											<p>Something went wrong, try refreshing and submitting the form again.</p>
-										</div>
-										<div class="input-group">
-											<span>
-											<i class="icon-user"></i>
-										</span>
-											<input name="requestname" type="text" class="form-control" placeholder="Your Name" />
-										</div>
-										<div class="row row-sm-space mt-1">
-											<div class="col">
-												<div class="input-group">
-													<span>
-													<i class="icon-email2"></i>
-												</span>
-													<input name="requestemail" type="text" class="form-control" placeholder="Your Email" />
-												</div>
-											</div>
-											<div class="col">
-												<div class="input-group">
-													<span>
-													<i class="icon-smartphone"></i>
-												</span>
-													<input name="requestphone" type="text" class="form-control" placeholder="Your Phone" />
-												</div>
-											</div>
-										</div>
-										<div class="selectWrapper input-group mt-1">
-											<span>
-											<i class="icon-tooth"></i>
-										</span>
-											<select name="requestservice" class="form-control">
-												<option selected="selected" disabled="disabled">Select Service</option>
-												<option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
-												<option value="General Dentistry">General Dentistry</option>
-												<option value="Orthodontics">Orthodontics</option>
-												<option value="Children`s Dentistry">Children`s Dentistry</option>
-												<option value="Dental Implants">Dental Implants</option>
-												<option value="Dental Emergency">Dental Emergency</option>
-											</select>
-										</div>
-										<div class="row row-sm-space mt-1">
-											<div class="col-sm-6">
-												<div class="input-group flex-nowrap">
-													<span>
-														<i class="icon-calendar2"></i>
-													</span>
-													<div class="datepicker-wrap">
-														<input name="requestdate" type="text" class="form-control datetimepicker" placeholder="Date" readonly>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-6 mt-1 mt-sm-0">
-												<div class="input-group flex-nowrap">
-													<span>
-															<i class="icon-clock"></i>
-													</span>
-													<div class="datepicker-wrap">
-														<input name="requesttime" type="text" class="form-control timepicker" placeholder="Time" readonly>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="text-right mt-2">
-											<button type="submit" class="btn btn-sm btn-hover-fill">Request</button>
-										</div>
-									</form>
-								</div>
-							</div>
-							<div class="col">
-								<a href="#" class="link">
-									<i class="icon-calendar"></i><span>Doctors Timetable</span>
-								</a>
-								<div class="link-drop">
-									<h5 class="link-drop-title"><i class="icon-calendar"></i>Doctors Timetable</h5>
-									<p>This simply works as a guide and helps you to connect with dentists of your choice. Please confirm the doctor’s availability before leaving your premises.</p>
-									<p class="text-right"><a href="schedule.html" class="btn btn-sm btn-hover-fill">Details</a></p>
-								</div>
-							</div>
-
-							<div class="col">
-								<a href="#" class="link">
-									<i class="icon-emergency-call"></i><span>Emergency Case</span></a>
-								<div class="link-drop">
-									<h5 class="link-drop-title"><i class="icon-emergency-call"></i>Emergency Case</h5>
-									<p>Emergency dental care may be needed if you have had a blow to the face, lost a filling, or cracked a tooth. </p>
-									<ul class="icn-list">
-										<li><i class="icon-telephone"></i><span class="phone">1-800-267-0000<br>1-800-267-0001</span>
-										</li>
-										<li><i class="icon-black-envelope"></i><a href="mailto:info@besthotel-email.com">info@besthotel-email.com</a></li>
-									</ul>
-									<p class="text-right mt-2"><a href="contact.html" class="btn btn-sm btn-hover-fill">Our Contacts</a></p>
-								</div>
-							</div>
-							<div class="col col-close"><a href="#" class="js-quickLinks-close"><i class="icon-top" data-toggle="tooltip" data-placement="top" title="Close panel"></i></a></div>
 						</div>
+						<div class="col">
+							<a href="#" class="link">
+								<i class="icon-clock"></i><span>Working Time</span>
+							</a>
+							<div class="link-drop">
+								<h5 class="link-drop-title"><i class="icon-clock"></i>Working Time</h5>
+								<table class="row-table">
+									<tr>
+										<td><i>Mon-Thu</i></td>
+										<td>08:00 - 20:00</td>
+									</tr>
+									<tr>
+										<td><i>Friday</i></td>
+										<td> 07:00 - 22:00</td>
+									</tr>
+									<tr>
+										<td><i>Saturday</i></td>
+										<td>08:00 - 18:00</td>
+									</tr>
+									<tr>
+										<td><i>Sunday</i></td>
+										<td>Closed</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="col">
+							<a href="#" class="link">
+								<i class="icon-pencil-writing"></i><span>Request Form</span>
+							</a>
+							<div class="link-drop">
+								<h5 class="link-drop-title"><i class="icon-pencil-writing"></i>Request Form</h5>
+								<a href="services.html" class="btn btn-primary">Request Now</a>
+							</div>
+						</div>
+						<div class="col">
+							<a href="#" class="link">
+								<i class="icon-calendar"></i><span>Doctors Timetable</span>
+							</a>
+							<div class="link-drop">
+								<h5 class="link-drop-title"><i class="icon-calendar"></i>Doctors Timetable</h5>
+								<p>This simply works as a guide and helps you to connect with dentists of your choice. Please confirm the doctor’s availability before leaving your premises.</p>
+								<p class="text-right"><a href="schedule.html" class="btn btn-sm btn-hover-fill">Details</a></p>
+							</div>
+						</div>
+						
+						<div class="col">
+							<a href="#" class="link">
+								<i class="icon-emergency-call"></i><span>Emergency Case</span></a>
+							<div class="link-drop">
+								<h5 class="link-drop-title"><i class="icon-emergency-call"></i>Emergency Case</h5>
+								<p>Emergency dental care may be needed if you have had a blow to the face, lost a filling, or cracked a tooth. </p>
+								<ul class="icn-list">
+									<li><i class="icon-telephone"></i><span class="phone">19001</span>
+									</li>
+									<li><i class="icon-black-envelope"></i><a href="mailto:Shiny@smiledentalclinic.com">Shiny@smiledentalclinic.com</a></li>
+								</ul>
+								<p class="text-right mt-2"><a href="contact.html" class="btn btn-sm btn-hover-fill">Our Contacts</a></p>
+							</div>
+						</div>
+						<div class="col col-close"><a href="#" class="js-quickLinks-close"><i class="icon-top" data-toggle="tooltip" data-placement="top" title="Close panel"></i></a></div>
 					</div>
-					<div class="quickLinks-open js-quickLinks-open"><span data-toggle="tooltip" data-placement="left" title="Open panel">+</span></div>
 				</div>
+				<div class="quickLinks-open js-quickLinks-open"><span data-toggle="tooltip" data-placement="left" title="Open panel">+</span></div>
 			</div>
+		</div>
+		<!--Preloader area start here-->
+		<div id="loader" class="loader">
+			<img src="images/tooth.png" class="loader_img" alt="">
+		</div>
+		<!--//quick links-->
 			<div id="mainSliderWrapper">
-				<div class="loading-content">
-					<div class="inner-circles-loader"></div>
-				</div>
 				<div class="main-slider arrows-white arrows-bottom" id="mainSlider" data-slick='{"arrows": false, "dots": false}'>
 					<div class="slide">
 						<div class="img--holder" data-animation="kenburns" data-bg="images/Smile_Dental_Clinic/Home/Home_section/2.jpg"></div>
@@ -357,7 +288,7 @@
 					</div>
 					<div class="col-8 order-2">
 						<div class="service-box">
-							<div class="service-box-image" data-bg="images/content/services-02.jpg"></div>
+							<div class="service-box-image" data-bg="images/content/service-03.jpg"></div>
 							<div class="service-box-caption text-center w-50 ml-auto">
 								<h3 class="service-box-title">General Dentistry</h3>
 								<p>General dentists provide services related to the general maintenance of oral hygiene and tooth health</p>
@@ -367,7 +298,7 @@
 					</div>
 					<div class="col-8 order-3 order-lg-4 order-xl-3">
 						<div class="service-box">
-							<div class="service-box-image" data-bg="images/content/services-03.jpg"></div>
+							<div class="service-box-image" data-bg="images/content/service-04.jpg"></div>
 							<div class="service-box-caption text-center w-50 ml-auto">
 								<h3 class="service-box-title">Children's Dentistry</h3>
 								<p>Your child will receive state-of-the-art
@@ -668,7 +599,6 @@
 									</div>
 								</div>
 							</div>
-							<a href="#" class="btn mt-15 mt-md-3" data-toggle="modal" data-target="#modalQuestionForm"><i class="icon-right-arrow"></i><span>Ask question</span><i class="icon-right-arrow"></i></a>
 						</div>
 					</div>
 				</div>
@@ -781,140 +711,7 @@
 	<div class="backToTop js-backToTop">
 		<i class="icon icon-up-arrow"></i>
 	</div>
-	<div class="modal modal-form modal-form-sm fade" id="modalQuestionForm">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<button aria-label='Close' class='close' data-dismiss='modal'>
-					<i class="icon-error"></i>
-				</button>
-				<div class="modal-body">
-					<div class="modal-form">
-						<h3>Ask a Question</h3>
-						<form class="mt-15" id="questionForm" method="post" novalidate>
-							<div class="successform">
-								<p>Your message was sent successfully!</p>
-							</div>
-							<div class="errorform">
-								<p>Something went wrong, try refreshing and submitting the form again.</p>
-							</div>
-							<div class="input-group">
-								<span>
-								<i class="icon-user"></i>
-							</span>
-								<input type="text" name="name" class="form-control" autocomplete="off" placeholder="Your Name*" />
-							</div>
-							<div class="input-group">
-								<span>
-									<i class="icon-email2"></i>
-								</span>
-								<input type="text" name="email" class="form-control" autocomplete="off" placeholder="Your Email*" />
-							</div>
-							<div class="input-group">
-								<span>
-									<i class="icon-smartphone"></i>
-								</span>
-								<input type="text" name="phone" class="form-control" autocomplete="off" placeholder="Your Phone" />
-							</div>
-							<textarea name="message" class="form-control" placeholder="Your comment*"></textarea>
-							<div class="text-right mt-2">
-								<button type="submit" class="btn btn-sm btn-hover-fill">Ask Now</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal modal-form fade" id="modalBookingForm">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<button aria-label='Close' class='close' data-dismiss='modal'>
-					<i class="icon-error"></i>
-				</button>
-				<div class="modal-body">
-					<div class="modal-form">
-						<h3>Book an Appointment</h3>
-						<form class="mt-15" id="bookingForm" method="post" novalidate>
-							<div class="successform">
-								<p>Your message was sent successfully!</p>
-							</div>
-							<div class="errorform">
-								<p>Something went wrong, try refreshing and submitting the form again.</p>
-							</div>
-							<div class="input-group">
-								<span>
-								<i class="icon-user"></i>
-							</span>
-								<input type="text" name="bookingname" class="form-control" autocomplete="off" placeholder="Your Name*" />
-							</div>
-							<div class="row row-xs-space mt-1">
-								<div class="col-sm-6">
-									<div class="input-group">
-										<span>
-											<i class="icon-email2"></i>
-										</span>
-										<input type="text" name="bookingemail" class="form-control" autocomplete="off" placeholder="Your Email*" />
-									</div>
-								</div>
-								<div class="col-sm-6 mt-1 mt-sm-0">
-									<div class="input-group">
-										<span>
-											<i class="icon-smartphone"></i>
-										</span>
-										<input type="text" name="bookingphone" class="form-control" autocomplete="off" placeholder="Your Phone" />
-									</div>
-								</div>
-							</div>
-							<div class="row row-xs-space mt-1">
-								<div class="col-sm-6">
-									<div class="input-group">
-										<span>
-											<i class="icon-birthday"></i>
-										</span>
-										<input type="text" name="bookingage" class="form-control" autocomplete="off" placeholder="Your age" />
-									</div>
-								</div>
-							</div>
-							<div class="selectWrapper input-group mt-1">
-								<span>
-									<i class="icon-tooth"></i>
-								</span>
-								<select name="bookingservice" class="form-control">
-									<option selected="selected" disabled="disabled">Select Service</option>
-									<option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
-									<option value="General Dentistry">General Dentistry</option>
-									<option value="Orthodontics">Orthodontics</option>
-									<option value="Children`s Dentistry">Children`s Dentistry</option>
-									<option value="Dental Implants">Dental Implants</option>
-									<option value="Dental Emergency">Dental Emergency</option>
-								</select>
-							</div>
-							<div class="input-group flex-nowrap mt-1">
-								<span>
-									<i class="icon-calendar2"></i>
-								</span>
-								<div class="datepicker-wrap">
-									<input name="bookingdate" type="text" class="form-control datetimepicker" placeholder="Date" readonly>
-								</div>
-							</div>
-							<div class="input-group flex-nowrap mt-1">
-								<span>
-									<i class="icon-clock"></i>
-								</span>
-								<div class="datepicker-wrap">
-									<input name="bookingtime" type="text" class="form-control timepicker" placeholder="Time">
-								</div>
-							</div>
-							<textarea name="bookingmessage" class="form-control" placeholder="Your comment"></textarea>
-							<div class="text-right mt-2">
-								<button type="submit" class="btn btn-sm btn-hover-fill">Book now</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
 	<!-- Vendors -->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="vendor/jquery-migrate/jquery-migrate-3.0.1.min.js"></script>
@@ -932,12 +729,12 @@
 	<script src="vendor/form-validation/jquery.form.js"></script>
 	<script src="vendor/form-validation/jquery.validate.min.js"></script>
 	<!-- Custom Scripts -->
-	<script src="js/app.js"></script>
     <script src="color/color.js"></script>
-
+	
+	<script src="js/app.js"></script>
 	<script src="js/app-shop.js"></script>
 	<script src="form/forms.js"></script>
-
+	
 </body>
 
 

@@ -1,7 +1,10 @@
 $(function () {
 
 	"use strict";
-
+	$(document).ready(function(){
+		$("#loader").delay(800).fadeOut(2000);
+	
+	})
 	var $document = $(document),
 		$window = $(window),
 		windowWidth = window.innerWidth || $window.width(),
@@ -1532,8 +1535,93 @@ function reviewForm() {
         formControl.className = 'form-group  form-control-validation success';
     }
 }
+requestForm();
+function requestForm() {
+	let requestForm = document.getElementById('requestFormValidation');
+    let requestName = document.getElementById('requestname');
+    let requestEmail = document.getElementById('requestemail');
+    let requestPhone = document.getElementById('requestphone');
+    let requestService = document.getElementById('requestservice');
+    let requestDate = document.getElementById('requestdate');
+    let requestTime = document.getElementById('requesttime');
+
+    let formErrors = [];
+
+    requestForm.addEventListener('submit', e => {
+        checkInputs();
+        if (formErrors.length) {
+            e.preventDefault();
+        }
+    });
+
+    function checkInputs() {
+        formErrors = [];
+        // trim to remove the whitespaces
+
+        let requestNameValue = requestName.value.trim();
+        let requestEmailValue = requestEmail.value.trim();
+        let requestPhoneValue = requestPhone.value.trim();
+        let requestServiceValue = requestService.value.trim();
+        let requestDateValue = requestDate.value.trim();
+        let requestTimeValue = requestTime.value.trim();
+
+
+
+        if (requestNameValue === '') {
+            formErrors.push('Request name is required');
+            setErrorFor(requestName, 'Request name is required');
+        } else {
+            setSuccessFor(requestName);
+        }
+        if (requestEmailValue === '') {
+            formErrors.push('Request email is required');
+            setErrorFor(requestEmail, 'Request email is required');
+        } else {
+            setSuccessFor(requestEmail);
+        }
+        if (requestPhoneValue === '') {
+            formErrors.push('Request phone is required');
+            setErrorFor(requestPhone, 'Request phone is required');
+        } else {
+            setSuccessFor(requestPhone);
+        }
+        if (requestServiceValue === '') {
+            formErrors.push('Request service is required');
+            setErrorFor(requestService, 'Request service is required');
+        } else {
+            setSuccessFor(requestService);
+        }
+        if (requestDateValue === '') {
+            formErrors.push('Request date is required');
+            setErrorFor(requestDate, 'Request date is required');
+        } else {
+            setSuccessFor(requestDate);
+        }
+        if (requestTimeValue === '') {
+            formErrors.push('Request time is required');
+            setErrorFor(requestTime, 'Request time is required');
+        } else {
+            setSuccessFor(requestTime);
+        }
+
+        
+    }
+
+    function setErrorFor(input, message) {
+        let formControl = input.parentElement;
+        let small = formControl.querySelector('small');
+        formControl.className = 'form-group form-control-validation error';
+        small.innerText = message;
+    }
+
+    function setSuccessFor(input) {
+        let formControl = input.parentElement;
+        formControl.className = 'form-group  form-control-validation success';
+    }
+}
 $(document).ready(function(){
     $("input[type='number']").attr("min","1")
+	
 })
 function isInputNumber(event) {
 	var char = String.fromCharCode(event.which);
