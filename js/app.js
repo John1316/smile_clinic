@@ -1041,6 +1041,16 @@ $(function () {
 			var $this = $(this),
 				bg = $this.attr('data-bg');
 			$this.css({
+				'background-image': 'url(' + bg + ')'
+			});
+		});
+	}
+	// background image inline
+	function dataWithOverlay(el) {
+		$(el).each(function () {
+			var $this = $(this),
+				bg = $this.attr('data-bg-overlay');
+			$this.css({
 				'background-image': 'linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(' + bg + ')'
 			});
 		});
@@ -1169,6 +1179,7 @@ $(function () {
 	backToTop('.js-backToTop', templateOption.backToTop);
 	scrollTo();
 	dataBg('[data-bg]');
+	dataWithOverlay('[data-bg-overlay]');
 	fixedTable();
 	mobileInfoSlide();
 	$('.navbar-nav').pageScroller();
