@@ -1041,7 +1041,7 @@ $(function () {
 			var $this = $(this),
 				bg = $this.attr('data-bg');
 			$this.css({
-				'background-image': 'url(' + bg + ')'
+				'background-image': 'linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(' + bg + ')'
 			});
 		});
 	}
