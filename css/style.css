@@ -15530,3 +15530,23 @@ input[type=number] {
       transform: scale(1.2);
   }
 }
+.card.card-header-profile p{
+  color: #fff;
+}
+.card.card-header-profile .card-body {
+  padding: 15px;
+}
+.card.card-header-profile .card-body {
+  padding: 15px;
+}
+.card_previous{
+  box-shadow: 0 0 18px rgb(0 0 0 / 6%);
+}
+.card_previous .card-title{
+  margin-bottom: 10px;
+}
+.reservation_info_hr {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 15px;
+  margin-bottom: 29px;
+}
