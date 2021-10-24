@@ -10,7 +10,7 @@
 	<meta name="description" content="html 5 template, dentist, stomatologist, dental clinic template, medical template, clinic template, surgery clinic theme, plastic surgery template">
 	<meta name="author" content="websmirno.site">
 	<meta name="format-detection" content="telephone=no">
-	<title>Smile Dental Clinic | Register</title>
+	<title>Smile Dental Clinic | Current reservation</title>
 	<!-- Stylesheets -->
 	<link href="vendor/slick/slick.css" rel="stylesheet">
 	<link href="vendor/animate/animate.min.css" rel="stylesheet">
@@ -18,6 +18,8 @@
 	<link href="vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
     <link href="color/color.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
 <!--Favicon-->
 	<link rel="icon" href="images/Smile_Dental_Clinic/Home/Logo/favicon.png" type="image/x-icon">
 	<!-- Google Fonts -->
@@ -198,87 +200,52 @@
 	</div>
 	<!--Preloader area start here-->
 	<div class="page-content">
-		
-		<div class="section mt-0">
+        <div class="section mt-0">
 			<div class="breadcrumbs-wrap">
 				<div class="container">
 					<div class="breadcrumbs">
 						<a href="index.html">Home</a>
-						<span>Register</span>
+						<span>Testimonials</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--section-->
-		<div class="section">
-			<div class="container">
-				<div class="row justify-content-center">
-                    
-					<div class="col-lg-8 mt-4 mt-md-0 ">
-                        <div class="card shadow-4">
-                            <div class="card-body">
-                                <h4>Register</h4>
-                                <form id="registerForm" method="POST" class="theme-form">
-                                    <div class="form-row row">
-										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input class="form-control" type="text" id="full_name" name="name"
-                                                placeholder="Name">
-												<small>Error message</small>
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="form-group  form-control-validation">
-												<input class="form-control" type="email" id="email" name="email"
-                                                placeholder="Email address">
-												
-												<small>Error message</small>
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input onkeypress="isInputNumber(event)" class="form-control" type="number" id="phone" name="phone" min="1"
-                                                placeholder="Phone Number">
-												<small>Error message</small>
-											</div>
-                                        </div>
-										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input class="form-control" type="text" id="address" name="address"
-                                                placeholder="Address">
-												<small>Error message</small>
-											</div>
-                                        </div>
-										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input class="form-control" type="password" id="password" name="password"
-                                                placeholder="Password">
-												<small>Error message</small>
-											</div>
-										</div>
-										<div class="col-lg-6">
-											<div class="form-group form-control-validation">
-												<input class="form-control" type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
-												<small>Error message</small>
-											</div>
-										</div>
-										<div class="col-md-6 mb-2">
-											<span>User? <a href="login.html">Login Now</a></span>
-										</div>
-                                        <div class="col-12">
-                                            <button onclick="registerForm();" class="btn btn-primary w-auto" type="submit">Create account</button>
-                                        </div>
-                                    </div>
-                                </form>
+    <!-- reserve complete start -->
+    <section class="section page-content-first">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="track-area">
+                        <div class="track-price">
+                            <ul class="track-order list-unstyled">
+                                <li>
+                                    <h4 class="mb-0">Your reservation id is: 121</h4>
+                                </li>
+                                <li><span class="track-status">Status:</span> Preparing to deliver</li>
+                            </ul>
+                        </div>
+                        <div class="track-main">
+                            <div class="track">
+                                <div class="step active">
+                                    <span class="icon"><i class="fa fa-check"></i></span>
+                                    <span class="text">Reservation confirmed</span>
+                                </div>
+                                
+                                <div class="step">
+                                    <span class="icon"><i class="fa fa-car"></i></span>
+                                    <span class="text"> On the way </span>
+                                </div>
+                                <div class="step">
+                                    <span class="icon"><i class="fa fa-home"></i>
+                                    </span> <span class="text">Done</span>
+                                </div>
                             </div>
                         </div>
-					</div>
+                    </div>
                 </div>
-				</div>
-			</div>
-		</div>
-		<!--//section-->
-	</div>
+            </div>
+        </div>
+    </section>
 	<!--footer-->
 	<div class="footer">
 		<div class="container">
@@ -356,6 +323,4 @@
 	
 </body>
 
-
-<!-- Mirrored from websmirno.site/medin/html/dentco-html/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 17 Oct 2021 15:57:39 GMT -->
 </html>

@@ -712,7 +712,8 @@ $(function () {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			fade: true,
-			asNavFor: thumbs
+			asNavFor: thumbs,
+			autoplay:true
 		});
 		$(thumbs).slick({
 			slidesToShow: 3,
@@ -1486,6 +1487,8 @@ reviewForm();
 function reviewForm() {
 	let reviewForm = document.getElementById('reviewFormValidation');
     let fullName = document.getElementById('full_name');
+    let email = document.getElementById('email');
+    let phone = document.getElementById('phone');
     let position = document.getElementById('position');
 
     let review = document.getElementById('review');
@@ -1507,6 +1510,8 @@ function reviewForm() {
         // trim to remove the whitespaces
 
         let fullNameValue = fullName.value.trim();
+        let phoneValue = phone.value.trim();
+        let emailValue = email.value.trim();
         let positionValue = position.value.trim();
         let reviewValue = review.value.trim();
 
@@ -1517,6 +1522,21 @@ function reviewForm() {
             setErrorFor(fullName, 'Full Name is required');
         } else {
             setSuccessFor(fullName);
+        }
+		if (phoneValue === '') {
+            formErrors.push('Phone is required');
+            setErrorFor(phone, 'Phone is required');
+        } else {
+            setSuccessFor(phone);
+        }
+		if (emailValue === '') {
+            formErrors.push('Email is required');
+            setErrorFor(email, 'Email is required');
+        } else if (!isEmail(emailValue)) {
+            formErrors.push('Email is invalid');
+            setErrorFor(email, 'Email is invalid');
+        } else {
+            setSuccessFor(email);
         }
         if (positionValue === '') {
             formErrors.push('Position is required');
@@ -1544,6 +1564,9 @@ function reviewForm() {
     function setSuccessFor(input) {
         let formControl = input.parentElement;
         formControl.className = 'form-group  form-control-validation success';
+    }
+	function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     }
 }
 requestForm();
