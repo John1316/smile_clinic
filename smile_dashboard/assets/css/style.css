@@ -1,0 +1,141 @@
+/*================================================================================
+	Item Name: Frest HTML Admin Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.shadow{
+	box-shadow: 8px 0 18px 0 rgb(25 42 70 / 13%) !important;
+}
+.card-content .btn-info{
+	background-color: #00E7F7 !important;
+}
+.bg-primary{
+	background-color: #1A233A !important;
+}
+.data-entry .card{
+    min-height: 98px;
+}
+.static-top-widget .media-body .icon-bg{
+	position: absolute;
+	left: 0;
+	top: 6px;
+	opacity: 0.2;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-size: 100px;
+}
+.static-top-widget .media-body {
+	-ms-flex-item-align: center !important;
+	align-self: center !important;
+	padding-right: 30px;
+}
+.static-top-widget h4 {
+	font-weight: 600;
+    color: #fff;
+}
+.main-menu{
+	box-shadow: 1px 0px 30px rgb(0 0 0 / 10%);
+}
+.o-hidden {
+	overflow: hidden;
+}
+.border-0 {
+	border-width: 0 !important;
+}
+.border-0 {
+	border: 0 !important;
+}
+
+.social-widget-card h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.b-l-light {
+    border-left: 1px solid #e6edef !important;
+}
+.b-b-light {
+    border-bottom: 1px solid #e6edef !important;
+}
+.b-r-light {
+    border-right: 1px solid #e6edef !important;
+}
+.social-widget-card h4 {
+    font-size: 18px;
+}
+
+
+.main-menu .sidebar-user img {
+    border: 10px solid rgba(36, 105, 92, 0.2);
+}
+
+.img-90 {
+    width: 90px !important;
+    height: 90px !important;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.sidebar-user .counter{
+    font-weight: 600;
+}
+/* .social-widget-card-header{
+    font-size: 11px;
+}
+
+html body .content {
+    margin-right: 350px;
+}
+body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu{
+    width: 350px;
+} 
+body.vertical-layout.vertical-menu-modern .main-menu{
+    border-left: none;
+}
+.main-menu .navbar-header{
+    width: 100%;
+} */
+.main-menu.menu-light .navigation > li.nav-item.open > a, .main-menu.menu-light .navigation > li.nav-item.sidebar-group-active > a{
+    padding: 9px;
+    margin: 0;
+}
+.static-top-widget:hover .icon-bg {
+    -webkit-transform: rotate(-5deg) scale(1.1);
+    transform: rotate(-5deg) scale(1.1);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.bg-orange{
+    background-color: #F08A10;
+}
+.bg-grills{
+    background-color: #4e0000;
+} 
+.main-menu .main-menu-content .navigation li.nav-item{
+    margin-bottom: 4px;
+} 
+.main-menu .main-menu-content .navigation li.nav-item .nav-link{
+    border-radius: 20px;
+    transition: all 1s;
+}
+.main-menu .main-menu-content .navigation .nav-item .nav-link:hover{
+    background-color: #1e76bd;
+    color: #fff;
+}
+.card-header-primary{
+    background-color: #1e76bd;
+}
+.card-header-primary .card-title{
+    color: #fff;
+}
